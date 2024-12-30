@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="signupButton">Sign Up</button>
+            <button id="loginButton">Login</button>
+        </ul>
+    </nav>
+
+
+<div id="signupForm" class="hidden">
+    <h2>Sign Up Form</h2>
+    <form id="signupFormElement">
+        <label for="username">Username:</label>
+        <input type="text" id="signupUsername" name="username" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="signupEmail" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="signupPassword" name="password" required><br><br>
+        <button type="submit" class="submit">Submit</button>
+        <button type="button" id="closeButtonSignup">Close</button>
+    </form>
+</div>
+
+
+<div id="loginForm" class="hidden">
+    <h2>Login Form</h2>
+    <form id="loginFormElement">
+        <label for="username">Username:</label>
+        <input type="text" id="loginUsername" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="loginPassword" name="password" required><br><br>
+        <button type="submit" class="submit">Submit</button>
+        <button type="button" id="closeButtonLogin">Close</button>
+    </form>
+</div>
+<script src="./login.js"></script>
+
+</body>
+</html>
